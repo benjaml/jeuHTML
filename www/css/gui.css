@@ -6,4 +6,123 @@
 	background-position : center;
 }
 
+#text-box{
+	margin : 2% 5% 0 5%;
+	height : 8%;
+	width : auto;
+}
+
+.box-style{
+	
+	background: -moz-linear-gradient(top,  rgba(30,87,153,0.8) 0%, rgba(41,137,216,0.8) 50%, rgba(32,124,202,0.8) 51%, rgba(125,185,232,0.8) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,87,153,0.8)), color-stop(50%,rgba(41,137,216,0.8)), color-stop(51%,rgba(32,124,202,0.8)), color-stop(100%,rgba(125,185,232,0.8))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(30,87,153,0.8) 0%,rgba(41,137,216,0.8) 50%,rgba(32,124,202,0.8) 51%,rgba(125,185,232,0.8) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(30,87,153,0.8) 0%,rgba(41,137,216,0.8) 50%,rgba(32,124,202,0.8) 51%,rgba(125,185,232,0.8) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(30,87,153,0.8) 0%,rgba(41,137,216,0.8) 50%,rgba(32,124,202,0.8) 51%,rgba(125,185,232,0.8) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(30,87,153,0.8) 0%,rgba(41,137,216,0.8) 50%,rgba(32,124,202,0.8) 51%,rgba(125,185,232,0.8) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc1e5799', endColorstr='#cc7db9e8',GradientType=0 ); /* IE6-9 */
+	border-radius: 5px;
+	border-style : ridge;
+	border-color : rgba(255,255,255,0.8);
+	border-width : 5px;
+}
+
+#enemy-box{
+	height : 40%;
+	width : 90%;
+	background-color : none;
+	margin-left : auto;
+	margin-right : auto;
+	
+}
+
+.enemy{
+	height : 100%;
+	width : 33%;
+	background-color : none;
+	display : inline-block;
+	margin-right : 0;
+	margin-left : 0;
+	background-size : 40%;
+	background-repeat : no-repeat;
+	background-position : center;
+}
+
+#e1{
+	background-image : url("../img/battlers/067-Goblin01.png");
+}
+
+#e2{
+	background-image : url("../img/battlers/068-Goblin02.png");
+}
+
+#e3{
+	background-image : url("../img/battlers/067-Goblin01.png");
+
+}
+
+#player-box{
+	height : 40%;
+	width : 90%;
+	background-color : none;
+	margin-left : auto;
+	margin-right : auto;
+	
+}
+
+.player{
+	height : 100%;
+	width : 33%;
+	background-color : none;
+	display : inline-block;
+	margin-right : 0;
+	margin-left : 0;
+	background-size : 50%;
+	background-repeat : no-repeat;
+	background-position : center;
+}
+
+.stats{
+	display : inline-block;
+	width : 40%;
+	height : 80%;
+	margin-bottom : 5%;
+}
+
+#p1-stats{
+}
+
+#p2-stats{
+	
+}
+
+#p3-stats{
+
+}
+
+.img{
+	display : inline-block;
+	width : 50%;
+	height : 100%;
+	background-repeat : no-repeat;
+	background-position : center;
+}
+
+#p1-img{
+	background-image : url("../img/battlers/010-Lancer02.png");	
+}
+
+#p2-img{
+	background-image : url("../img/battlers/019-Thief04.png");
+}
+
+#p3-img{
+	background-image : url("../img/battlers/038-Mage06.png");
+}
+
+.block{
+	width : auto;
+	height : 2%;
+}
+
 
