@@ -5,7 +5,6 @@
 		<title>Cours Web</title>
 		<link rel="stylesheet" type="text/css" href="css/base.css"/>
 		<link rel="stylesheet" type="text/css" href="css/gui.css"/>
-
 		<script src="js/Game.js"></script>
 		<script src="js/Character.js"></script>
 		<script src="js/Player.js"></script>
@@ -22,7 +21,9 @@
 			
 			<div class="block"></div>
 			
-			<div class="box-style" id="text-box"></div>
+			<div class="box-style" id="text-box">
+				<div class="text">xXDarkSasuke75Xx inflige 12 dégâts à Kobold lubrique !</div>
+			</div>
 			
 			<div id="enemy-box">
 				<!-- NE PAS TOUCHER A LA MISE EN FORME !!! BUG LIE AU INLINE-BLOCK-->
@@ -34,21 +35,31 @@
 			<div id="player-box">
 				<!-- NE PAS TOUCHER A LA MISE EN FORME !!! BUG LIE AU INLINE-BLOCK-->
 				<div class="player">
-					<div class="box-style stats" id="p1-stats">
-					</div><div class="img" id="p1-img">
+					<div class="player-menu">
+						<div class="box-style play" id="p1-play">
+						</div>
+						<div class="box-style stats" id="p1-stats">
+						</div></div><div class="img" id="p1-img">
 					</div>
 				</div><div class="player">
-					<div class="box-style stats" id="p2-stats">
-					</div><div class="img" id="p2-img">
+					<div class="player-menu">
+						<div class="box-style play" id="p2-play">
+						</div>
+						<div class="box-style stats" id="p2-stats">
+						</div></div><div class="img" id="p2-img">
 					</div>
 				</div><div class="player">
-					<div class="box-style stats" id="p1-stats">
-					</div><div class="img" id="p3-img">
+					<div class="player-menu">
+						<div class="box-style play" id="p3-play">
+						</div>
+						<div class="box-style stats" id="p3-stats">
+							<div class="text">Hp : 100 </br> Mana : 100</div>
+						</div></div><div class="img" id="p3-img">
 					</div>
 				</div>
 			</div>
 			
-			<div class="block"></div>
+			<div style="height:100%"></div>
 			
 			<canvas id="game"></canvas>
 			

@@ -10,6 +10,15 @@
 	margin : 2% 5% 0 5%;
 	height : 8%;
 	width : auto;
+	font-size : 2.5vw;
+	text-align : center;
+	
+}
+
+.text{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 .box-style{
@@ -25,6 +34,14 @@
 	border-style : ridge;
 	border-color : rgba(255,255,255,0.8);
 	border-width : 5px;
+	-moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.5);
+	-o-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.5);
+	box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.5);
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=rgba(0,0,0,0.5), Direction=134, Strength=10);
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
 }
 
 #enemy-box{
@@ -62,7 +79,7 @@
 }
 
 #player-box{
-	height : 40%;
+	height : 30%;
 	width : 90%;
 	background-color : none;
 	margin-left : auto;
@@ -82,11 +99,15 @@
 	background-position : center;
 }
 
-.stats{
+.player-menu{
 	display : inline-block;
 	width : 40%;
-	height : 80%;
-	margin-bottom : 5%;
+	height : 100%
+}
+
+.stats{
+	width : 90%;
+	height : 30%;
 }
 
 #p1-stats{
@@ -97,12 +118,21 @@
 }
 
 #p3-stats{
+	font-size : 1.8vw;
+	text-align : center;
+}
 
+.play{
+	width : 90%;
+	height : 65%;
+}
+
+#p1-play{
 }
 
 .img{
 	display : inline-block;
-	width : 50%;
+	width : 60%;
 	height : 100%;
 	background-repeat : no-repeat;
 	background-position : center;
