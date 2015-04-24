@@ -1,12 +1,11 @@
-#background{
-	height : 100%;
-	background-image : url("../img/battlebacks/001-Grassland01.jpg");
-	background-repeat : no-repeat;
-	background-size : cover;
-	background-position : center;
-}
-
 #game{
 	position : absolute;
 	height : 100%;
+}
+
+#text-box{
+	position : absolute;
+	height : 10%;
+	width : 100%;
+	background-image : url("../img/battlebacks/001-Grassland01.jpg");
 }
