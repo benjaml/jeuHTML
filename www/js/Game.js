@@ -24,6 +24,9 @@ var Game = function()
 	this.graphics.timeData = this.timeData;
 	
 	this.scene = new Scene(this);
+	window.addEventListener('resize',function(){
+		self.handleResize();
+	});
 	requestAnimationFrame(function loop(){
 		self.mainLoop();
 		requestAnimationFrame(loop);
@@ -31,11 +34,20 @@ var Game = function()
 	this.turnList =[];
 	this.makeTurnList();
 	this.indexTurn = 0;
+	this.handleResize();
 };
 
 Game.WIDTH = 800;
 Game.HEIGHT = 600;
 
+
+Game.prototype.handleResize = function(){
+	this.canvas.width = document.body.clientWidth;
+	this.canvas.height = document.body.clientHeight;
+	this.graphics.width = this.canvas.width;
+	this.graphics.height = this.canvas.height;
+	this.scale = this.canvas.height/Game.HEIGHT; 
+}
 Game.prototype.makeTurnList = function()
 {
 	this.scene.listCharacter = [];
@@ -100,5 +112,11 @@ Game.prototype.draw = function(g)
 	g.fillStyle = "red";
 	g.fillRect(0, 0, g.width, g.height);
 	
-	this.scene.draw(g);
+	g.save();
+		g.scale(this.scale,this.scale);
+		
+		this.scene.draw(g);
+		
+
+	g.restore();
 };
