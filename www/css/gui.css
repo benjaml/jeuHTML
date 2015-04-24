@@ -7,5 +7,6 @@
 }
 
 #game{
-	position : absolute
+	position : absolute;
+	height : 100%;
 }
